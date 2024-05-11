@@ -1,5 +1,11 @@
 # Uniswap
 
+## Installation
+
+Install it through Landscape at `~dister-dozzod-wispem-wantex/uniswap`, or via the Dojo command: `|install ~dister-dozzod-wispem-wantex %uniswap`.
+
+## Discussion
+
 This is Uniswap on Urbit.  Unlike previous versions of this app, there is no longer any configuration, proxy server, or any technical setup / dev-ops required. It just works.
 
 A previous version of this app, made by @ajlamarc about a year ago, required an external proxy server, running alongside your Urbit ship, to circumvent CORS restrictions when querying the Uniswap graphql API.  It worked, but it was brittle.  My version builds on this work by moving the proxy server *inside* of Urbit (i.e., implementing a proxy agent as a Gall app) and bundling it with Uniswap.  Everything is handled invisibly by your ship, the way God intended it.
