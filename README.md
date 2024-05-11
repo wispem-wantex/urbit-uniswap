@@ -2,7 +2,9 @@
 
 ## Installation
 
-Install it through Landscape at `~dister-dozzod-wispem-wantex/uniswap`, or via the Dojo command: `|install ~dister-dozzod-wispem-wantex %uniswap`.
+You can install it:
+- via Landscape: `~dister-dozzod-wispem-wantex/uniswap`
+- via Dojo: `|install ~dister-dozzod-wispem-wantex %uniswap`
 
 ## Discussion
 
