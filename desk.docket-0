@@ -1,0 +1,10 @@
+:~  title+'Uniswap'
+    info+'Self-hosted uniswap frontend.'
+    color+0xcd.75df
+    image+'https://logowik.com/content/uploads/images/uniswap-uni7403.jpg'
+    base+'uniswap'
+    glob-http+['https://urbit.playfulpachyderm.com/podcast/glob-0vjo2a3.mom2n.m02im.32uig.pumid.glob' 0vjo2a3.mom2n.m02im.32uig.pumid]
+    version+[0 1 3]
+    website+'https://uniswap.org/'
+    license+'MIT'
+==

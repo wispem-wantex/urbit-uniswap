@@ -66,8 +66,8 @@
           :: Change the "Origin" header to match the upstream (this is hacky as fuck and will break eventually)
           header-list  (rewrite-headers header-list:old-req)
         ==
-      ~&  "Proxying {<url.old-req>} to {<url.new-req>}"
-      ~&  "Outgoing headers: {<header-list:new-req>}"
+      ::~&  "Proxying {<url.old-req>} to {<url.new-req>}"
+      ::~&  "Outgoing headers: {<header-list:new-req>}"
       :~
         [%pass /response/[eyre-id] %arvo %i %request new-req *outbound-config:iris]
       ==
@@ -94,8 +94,8 @@
         =/  the-octs=octs  data:(need full-file:resp)
         ::
         =/  thedata=@t  q.the-octs
-        ~&  resp-header
-        ~&  "Proxied HTTP {<status-code:resp-header>}:  {<thedata>}"
+        ::~&  resp-header
+        ::~&  "Proxied HTTP {<status-code:resp-header>}:  {<thedata>}"
         %+  give-simple-payload:app:server
           original-eyre-id
         :-  %_(resp-header headers [['Content-type'^'application/json'] ~])
